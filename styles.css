@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -9,9 +10,10 @@ html {
 }
 
 body {
-  background: #090920;
+  background-color: #090920;
   font-family: 'Darker Grotesque', sans-serif;
 }
+
 
 .header {
   display: flex;
@@ -19,6 +21,13 @@ body {
   align-items: baseline;
   color: white;
   padding-block: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 920px) {
+  .header {
+    display: none;
+  }
 }
 
 .header_h1 {
@@ -35,13 +44,13 @@ body {
   text-decoration: none;
   color: white;
   font-size: 1.5rem;
-  transition: all 0.3s ease-in-out;
   transform-origin: top;
 }
 
 .navbar_a:hover {
-  color: aqua;
+  color: #00ffff;
   transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
 }
 
 .navbar_a.home {
@@ -173,6 +182,7 @@ body {
   display: flex;
   flex-direction: column;
   place-content: center;
+
 }
 
 .hero_container {
@@ -194,6 +204,15 @@ body {
   z-index: 20;
 }
 
+@media only screen and (max-width: 920px) {
+  .hero_image {
+    border-radius: 100%;
+    height: 12rem;
+    z-index: 20;
+    margin-block-start: 2rem;
+  }
+}
+
 .hero_image_caption {
   font-size: 2rem;
   font-weight: 600;
@@ -207,6 +226,13 @@ body {
   color: white;
   font-size: 3.5rem;
   line-height: 3rem;
+}
+
+@media only screen and (max-width: 510px) {
+  .hero_subtitle_container {
+    max-width: 300px;
+    margin: 0 auto;
+  }
 }
 
 .hero_subtitle_typewriting {
@@ -225,21 +251,21 @@ body {
 .hero_social_menu ul li {
   list-style: none;
   z-index: 30;
-  transition: all 0.3s ease-in-out;
-  transform-origin: top;
 }
 
 .hero_social_menu ul li:hover {
   transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+  transform-origin: top;
 }
 
 .hero_social_menu ul li .fab {
   color: white;
-  transition: all 0.3s ease-in-out;
 }
 
 .hero_social_menu ul li .fab:hover {
   color: aqua;
+  transition: all 0.3s ease-in-out;
 }
 
 .about_me_section {
@@ -263,6 +289,21 @@ body {
   margin: 0;
 }
 
+@media only screen and (max-width: 385px) {
+  .about_me_h2 {
+    color: aqua;
+    font-size: 2.3rem;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .my_abilities_h2 {
+    color: aqua;
+    margin: 0;
+    font-size: 2.3rem;
+  }
+}
+
 .about_me_p {
   color: white;
   font-size: 1.5rem;
@@ -279,6 +320,71 @@ body {
 .my_abilities_h2 {
   color: aqua;
   margin: 0;
+}
+
+.services_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-block-start: 3rem;
+  margin-block-end: 6rem;
+}
+
+.services_h2 {
+  color: aqua;
+  font-size: 3rem;
+}
+
+@media only screen and (max-width: 385px) {
+  .services_h2 {
+    color: aqua;
+    font-size: 2.3rem;
+  }
+}
+
+.services_main_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  width: 65%;
+
+}
+
+.services_container {
+  background-color: white;
+  border-radius: 0.5rem;
+  width: 15rem;
+  padding: 1rem;
+  text-align: center;
+  z-index: -3;
+  position: relative;
+  overflow: hidden;
+}
+
+.services_container i {
+  color: rgb(1, 196, 196);
+}
+
+.services_container h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.services_container_decor {
+  position: absolute;
+  top: -7rem;
+  left: -0.1rem;
+  height: 15rem;
+  width: 15rem;
+  border-radius: 100%;
+  z-index: -2;
+  background-color: grey;
+  opacity: 15%;
+}
+
+.services_icon {
+  font-size: 4rem;
 }
 
 .container {
@@ -341,6 +447,63 @@ body {
   transform: rotateY(300deg) translateZ(15rem);
 }
 
+@media only screen and (max-width: 580px) {
+  .carousel_face:nth-child(1) {
+    transform: rotateY(0deg) translateZ(10rem);
+  }
+
+  .carousel_face:nth-child(2) {
+    transform: rotateY(60deg) translateZ(10rem);
+  }
+
+  .carousel_face:nth-child(3) {
+    transform: rotateY(120deg) translateZ(10rem);
+  }
+
+  .carousel_face:nth-child(4) {
+    transform: rotateY(180deg) translateZ(10rem);
+  }
+
+  .carousel_face:nth-child(5) {
+    transform: rotateY(240deg) translateZ(10rem);
+  }
+
+  .carousel_face:nth-child(6) {
+    transform: rotateY(300deg) translateZ(10rem);
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .carousel_face:nth-child(1) {
+    transform: rotateY(0deg) translateZ(5rem);
+  }
+
+  .carousel_face:nth-child(2) {
+    transform: rotateY(60deg) translateZ(5rem);
+  }
+
+  .carousel_face:nth-child(3) {
+    transform: rotateY(120deg) translateZ(5rem);
+  }
+
+  .carousel_face:nth-child(4) {
+    transform: rotateY(180deg) translateZ(5rem);
+  }
+
+  .carousel_face:nth-child(5) {
+    transform: rotateY(240deg) translateZ(5rem);
+  }
+
+  .carousel_face:nth-child(6) {
+    transform: rotateY(300deg) translateZ(5rem);
+  }
+
+  .carousel_content {
+    margin: 0;
+    font-size: 1.6rem;
+  }
+}
+
 @keyframes rotate360 {
   from {
     transform: rotateY(0deg);
@@ -349,4 +512,116 @@ body {
   to {
     transform: rotateY(-360deg);
   }
+}
+
+.portfolio_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio_h2 {
+  color: aqua;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.portfolio_links_container {
+  display: flex;
+  gap: 2rem;
+  max-width: 65%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 15rem;
+  height: 10rem;
+  perspective: 1000px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+
+.flip-card-front.one {
+  background-image: url("./assets/images/googleclone.png");
+  background-size: cover;
+  color: black;
+}
+
+.flip-card-front.two {
+  background-image: url("./assets/images/yardsale.png");
+  background-size: cover;
+  color: black;
+}
+
+.flip-card-front.three {
+  background-image: url("./assets/images/Batatabit.png");
+  background-size: cover;
+  color: black;
+}
+
+.flip-card-front.four {
+  background-image: url("./assets/images/itzelahernandez.png");
+  background-size: cover;
+  color: black;
+}
+
+.flip-card-back {
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  transform: rotateY(180deg);
+}
+
+.flip-card-back h2 {
+  color: rgb(1, 196, 196);
+  font-size: 2rem;
+  margin: 0;
+}
+
+.flip-card-back p {
+  color: #090920;
+  font-weight: 800;
+}
+
+.flip-card-decor {
+  position: absolute;
+  top: -7rem;
+  left: -0.1rem;
+  height: 15rem;
+  width: 15rem;
+  border-radius: 100%;
+  z-index: -2;
+  background-color: grey;
+  opacity: 15%;
+}
+
+.contact_h2 {
+  font-size: 3rem;
+  color: #00ffff;
+  text-align: center;
 }
