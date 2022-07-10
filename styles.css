@@ -21,11 +21,121 @@ body {
   align-items: baseline;
   color: white;
   padding-block: 0.5rem;
-  margin-bottom: 1rem;
+  position: fixed;
+  background: #090920cc;
+  backdrop-filter: blur(11.8px);
+  -webkit-backdrop-filter: blur(11.8px);
+  width: 100%;
+  top: 0;
+  z-index: 100000;
+}
+
+.responsive_nav_container {
+  display: none;
 }
 
 @media only screen and (max-width: 920px) {
-  .header {
+  .responsive_nav_container {
+    position: absolute;
+    display: flex;
+    left: -2rem;
+    top: -2rem;
+  }
+
+  .menuToggle {
+    display: block;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  .menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+    -webkit-touch-callout: none;
+  }
+
+  .menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #01c4c4;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+      opacity 0.55s ease;
+  }
+
+  .menuToggle span:first-child {
+    transform-origin: 0% 0%;
+  }
+
+  .menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+  }
+
+  .menuToggle input:focus~span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #01c4c4;
+  }
+
+  .menuToggle input:focus~span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+
+  .menuToggle input:focus~span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+
+  .menu {
+    position: absolute;
+    width: 300px;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    background: #090920cc;
+    backdrop-filter: blur(11.8px);
+    -webkit-backdrop-filter: blur(11.8px);
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+  }
+
+  .menu li {
+    padding: 10px 0;
+    font-size: 2rem;
+  }
+
+  .menu a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .menuToggle input:focus~ul {
+    transform: none;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  .navbar_container {
     display: none;
   }
 }
@@ -61,6 +171,7 @@ body {
   background: #090920;
   width: 100%;
   height: 90vh;
+  margin-block-start: 3rem;
 }
 
 .circles {
@@ -598,7 +709,7 @@ body {
 }
 
 .flip-card-back h2 {
-  color: rgb(1, 196, 196);
+  color: #01c4c4;
   font-size: 2rem;
   margin: 0;
 }
@@ -630,7 +741,7 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 5rem;
+  gap: 2rem;
 }
 
 .contact_container {
@@ -699,4 +810,22 @@ body {
 .contact_h3 {
   color: rgb(1, 196, 196);
   margin: 0;
+}
+
+.footer_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #01c4c4;
+  height: fit-content;
+  width: 100%;
+  margin-top: 5rem;
+  padding: 1%;
+}
+
+.footer_content {
+  color: black;
+  font-size: 1rem;
+  text-align: center;
 }

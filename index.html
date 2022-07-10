@@ -13,17 +13,47 @@
   <title>Nabil Aparicio</title>
 </head>
 
-<body class="page">
+<body id="body" class="page">
   <header class="header page_header">
+    <div class="responsive_nav_container">
+      <div class="menuToggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul class="menu">
+          <a href="#body">
+            <li>Home</li>
+          </a>
+          <a href="#about_me">
+            <li>Acerca de mi</li>
+          </a>
+          <a href="#my_abilities">
+            <li>mis habilidades</li>
+          </a>
+          <a href="#services">
+            <li>Servicios</li>
+          </a>
+          <a href="#portfolio">
+            <li>Portafolio</li>
+          </a>
+          <a href="#contact">
+            <li>Contacto</li>
+          </a>
+        </ul>
+      </div>
+    </div>
     <h1 class="header_h1">Nabil Aparicio</h1>
-    <nav class="navbar">
-      <a href="google.com" class="navbar_a home">Home</a>
-      <a href="/" class="navbar_a">Acerca de mi</a>
-      <a href="/" class="navbar_a">Mis habilidades</a>
-      <a href="/" class="navbar_a">Experiencia</a>
-      <a href="/" class="navbar_a">Portafolio</a>
-      <a href="/" class="navbar_a">Contacto</a>
-    </nav>
+    <div class="navbar_container">
+      <nav class="navbar">
+        <a href="#body" class="navbar_a home">Home</a>
+        <a href="#about_me" class="navbar_a">Acerca de mi</a>
+        <a href="#my_abilities" class="navbar_a">Mis habilidades</a>
+        <a href="#services" class="navbar_a">Servicios</a>
+        <a href="#portfolio" class="navbar_a">Portafolio</a>
+        <a href="#contact" class="navbar_a">Contacto</a>
+      </nav>
+    </div>
   </header>
   <ul class=" circles">
     <li></li>
@@ -61,8 +91,8 @@
       </div>
   </section>
   <main>
-        <section class=" about_me_section">
-                <div class="about_me_container">
+        <section class=" about_me_section" id="about_me">
+                <div class="about_me_container ">
                   <h2 class="about_me_h2">Acerca de mi</h2>
                   <p class="about_me_p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur adipisci
                     voluptate
@@ -74,7 +104,7 @@
                   </p>
                 </div>
   </section>
-  <section class="services_section">
+  <section class="services_section" id="services">
     <h2 class="services_h2">Servicios</h2>
     <div class="services_main_container">
       <div class="services_container">
@@ -97,7 +127,7 @@
       </div>
     </div>
   </section>
-  <section class="my_abilities_section">
+  <section class="my_abilities_section" id="my_abilities">
     <h2 class="my_abilities_h2">Mis habilidades</h2>
     </div>
     <div class="container">
@@ -141,7 +171,7 @@
       </div>
     </div>
   </section>
-  <section class="portfolio_section">
+  <section class="portfolio_section" id="portfolio">
     <div class="portfolio_container">
       <h2 class="portfolio_h2">Mis Portafolio</h2>
       <div class="portfolio_links_container">
@@ -201,7 +231,7 @@
       </div>
     </div>
   </section>
-  <section class="contact_section">
+  <section class="contact_section" id="contact">
     <div class="contact_main_container">
       <h2 class="contact_h2">Contacto</h2>
       <div class="contact_main_subcontainer">
@@ -225,7 +255,14 @@
     </div>
   </section>
   </main>
-  <footer>todos los derechos reservados</footer>
+  <footer>
+    <div class="footer_container">
+      <div class="footer_content">
+        <h3 class="footer_h3">"Mantén tus ojos en las estrellas y los pies en el suelo" <br>(Theodore Roosevelt)</h3>
+        <p class="footer_p">&copy; 2020 Orlando Nabil</p>
+      </div>
+    </div>
+  </footer>
 </body>
 <script src="./main.js"></script>
 
