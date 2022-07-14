@@ -390,8 +390,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 65%;
+  max-width: 50rem;
   margin-block-start: 3rem;
+  margin-inline: 1rem;
 }
 
 .about_me_h2 {
@@ -423,6 +424,7 @@ body {
 }
 
 .about_me_p span {
+  font-size: 2rem;
   color: aqua;
   font-weight: 600;
 }
