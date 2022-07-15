@@ -34,7 +34,7 @@ body {
   display: none;
 }
 
-@media only screen and (max-width: 920px) {
+@media only screen and (max-width: 1090px) {
   .responsive_nav_container {
     position: absolute;
     display: flex;
@@ -135,7 +135,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 920px) {
+@media only screen and (max-width: 1090px) {
   .navbar_container {
     display: none;
   }
@@ -166,6 +166,33 @@ body {
 
 .navbar_a.home {
   color: aqua;
+}
+
+.button_download button {
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #01c4c4;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.button_download button:hover {
+  background-color: #01c4c4;
+  box-shadow: 0px 15px 20px #007b7b86;
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.button_download button:active {
+  transform: translateY(-1px);
 }
 
 .hero {
