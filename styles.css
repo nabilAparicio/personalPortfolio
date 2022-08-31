@@ -747,6 +747,24 @@ body {
   color: black;
 }
 
+.flip-card-front.five {
+  background-image: url("assets/images/RickAndMorty.png");
+  background-size: cover;
+  color: black;
+}
+
+.flip-card-front.six {
+  background-image: url("assets/images/weatherApp.png");
+  background-size: cover;
+  color: black;
+}
+
+.flip-card-front.seven {
+  background-image: url("assets/images/Quotes.png");
+  background-size: cover;
+  color: black;
+}
+
 .flip-card-back {
   overflow: hidden;
   background-color: rgb(255, 255, 255);
