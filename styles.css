@@ -536,7 +536,7 @@ body {
   width: 15rem;
   border-radius: 100%;
   z-index: -2;
-  background-color: grey;
+  background-color: rgb(168, 196, 201);
   opacity: 15%;
 }
 
@@ -700,6 +700,24 @@ body {
   overflow: hidden;
 }
 
+.icon-container{
+  margin-block: 6px;
+  display: flex;
+
+  align-items: center;
+}
+.icon .fab{
+  font-size: 1.5rem;
+  color: aliceblue;
+}
+.icon .fab:hover{
+  color: #01c4c4;
+  transform: scale(1.1);
+  transition: all 0.1s ease-in-out;
+  transform-origin: top;
+  
+}
+
 .flip-card-inner {
   position: relative;
   width: 100%;
@@ -730,13 +748,13 @@ body {
 }
 
 .flip-card-front.two {
-  background-image: url("./assets/images/yardsale.png");
+  background-image: url("assets/images/Pokedex.png");
   background-size: cover;
   color: black;
 }
 
 .flip-card-front.three {
-  background-image: url("./assets/images/Batatabit.png");
+  background-image: url("assets/images/ecommerce.png");
   background-size: cover;
   color: black;
 }
@@ -779,6 +797,7 @@ body {
 }
 
 .flip-card-back p {
+  margin: 2px;
   color: #090920;
   font-weight: 800;
 }
