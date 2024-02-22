@@ -742,43 +742,43 @@ body {
 
 
 .flip-card-front.one {
-  background-image: url("./assets/images/googleclone.png");
+  background-image: url("./assets/images/googleclone.webp");
   background-size: cover;
   color: black;
 }
 
 .flip-card-front.two {
-  background-image: url("assets/images/Pokedex.png");
+  background-image: url("assets/images/Pokedex.webp");
   background-size: cover;
   color: black;
 }
 
 .flip-card-front.three {
-  background-image: url("assets/images/ecommerce.png");
+  background-image: url("assets/images/ecommerce.webp");
   background-size: cover;
   color: black;
 }
 
 .flip-card-front.four {
-  background-image: url("./assets/images/itzelahernandez.png");
+  background-image: url("./assets/images/itzelahernandez.webp");
   background-size: cover;
   color: black;
 }
 
 .flip-card-front.five {
-  background-image: url("assets/images/RickAndMorty.png");
+  background-image: url("assets/images/RickAndMorty.webp");
   background-size: cover;
   color: black;
 }
 
 .flip-card-front.six {
-  background-image: url("assets/images/weatherApp.png");
+  background-image: url("assets/images/weatherApp.webp");
   background-size: cover;
   color: black;
 }
 
 .flip-card-front.seven {
-  background-image: url("assets/images/Quotes.png");
+  background-image: url("assets/images/Quotes.webp");
   background-size: cover;
   color: black;
 }

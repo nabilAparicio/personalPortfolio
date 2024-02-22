@@ -29,5 +29,14 @@ function type() {
   }
 }
 
+// lazy load icons
 
+document.addEventListener("DOMContentLoaded", function () {
+  var script = document.createElement("script");
+  script.onload = function () {
+    // Initialization code after Font Awesome has loaded
+  };
+  script.src = "https://kit.fontawesome.com/262cd7f859.js";
 
+  document.head.appendChild(script); // Append script to head or body as needed
+});
