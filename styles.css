@@ -161,7 +161,7 @@ body {
 .navbar_a:hover {
   color: #00ffff;
   transform: scale(1.05);
-  transition: all 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
 .navbar_a.home {
@@ -179,7 +179,7 @@ body {
   border: none;
   border-radius: 45px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease 0s;
+  transition: transform 0.3s ease 0s;
   cursor: pointer;
   outline: none;
 }
@@ -394,7 +394,7 @@ body {
 
 .hero_social_menu ul li:hover {
   transform: scale(1.1);
-  transition: all 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
   transform-origin: top;
 }
 
@@ -404,7 +404,7 @@ body {
 
 .hero_social_menu ul li .fab:hover {
   color: aqua;
-  transition: all 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
 .about_me_section {
@@ -713,7 +713,7 @@ body {
 .icon .fab:hover{
   color: #01c4c4;
   transform: scale(1.1);
-  transition: all 0.1s ease-in-out;
+  transition: transform 0.1s ease-in-out;
   transform-origin: top;
   
 }
